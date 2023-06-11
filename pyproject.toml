@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "hpl-gpt"
+version = "0.1.0"
+description = ""
+authors = ["Bharath Sriraam R R <albharath.1305@gmail.com>"]
+readme = "README.md"
+packages = [{include = "hpl_gpt"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+langchain = "^0.0.196"
+openai = "^0.27.8"
+chromadb = "^0.3.26"
+python-dotenv = "^1.0.0"
+pypdf = "^3.9.1"
+tiktoken = "^0.4.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.23.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
